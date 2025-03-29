@@ -27,10 +27,10 @@
 
 * {
     color: white;
-    background-color: black;
     font-family: "Courier Prime", monospace;
 }
-
+h1 {color: green;}
+h1::selection{ background-color: greenyellow;}
 ::selection, a:hover {
     background-color: green;
 }
