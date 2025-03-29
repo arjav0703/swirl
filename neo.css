@@ -1,0 +1,17 @@
+        .neo {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+        }
+        .dot {
+            color: #cdd6f4;
+        }
+        .dot.red { color: #f38ba8; }
+        .dot.yellow { color: #f9e2af; }
+        .dot.blue { color: #89b4fa; }
+        .dot.purple { color: #cba6f7; }
+        .dot.green { color: #a6e3a1; }
+        .dot.pink { color: #f5c2e7; }
+        .dot.orange { color: #fab387; }
+        .dot.cyan { color: #94e2d5; }
+        .dot.gray { color: #bac2de; }
