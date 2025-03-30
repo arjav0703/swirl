@@ -25,28 +25,164 @@
   }
   
 
-* {
+/* Base styles */
+body {
+    padding: 1rem;
+    background-color: #252A35;
     color: white;
-    font-family: "Courier Prime", monospace;
-}
-h1 {color: green;}
-h1::selection{ background-color: greenyellow;}
-::selection, a:hover {
-    background-color: green;
+    min-height: 100vh;
+    margin: 0;
 }
 
+/* Navigation */
 nav {
-    position: fixed;
-    right: 0px;
+    margin-bottom: 2rem;
 }
 
-.lost {
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ASCII art and system info container */
+.neo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px); /* Account for header and footer */
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.system-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 28rem;
+}
+
+/* ASCII art */
+pre {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1;
+  
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* System info section */
+.info-section {
+    margin-top: 0.5rem;
+    border-top: 1px solid #4B5563;
+    width: 100%;
+    max-width: 28rem;
+}
+
+.info-section > div {
+    margin-top: 1rem;
+}
+
+.info-section hr {
+    border-color: #4B5563;
+    margin: 0.5rem 0;
+}
+
+/* System info items */
+.info-item {
+    margin: 0.5rem 0;
+}
+
+/* Text colors for system info */
+.text-green {
+    color: #10B981;
+}
+
+.text-cyan {
+    color: #06B6D4;
+}
+
+/* Audio player */
+.audio-player {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.audio-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.audio-button:hover {
+    background-color: #2563EB;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Font classes */
+.courier-prime-bold {
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+}
+
+.courier-prime-regular {
+    font-family: 'Courier Prime', monospace;
+    font-weight: normal;
 }
 
 #software {
     background-color: #252A35;
+}
+
+#home {
+  min-height: 100vh;
 }
